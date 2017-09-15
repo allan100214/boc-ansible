@@ -15,18 +15,6 @@
     - name: chkconfig nginx
       command: chkconfig nginx on
 
-#    - name: install php-fpm
-#      yum: name=php-fpm state=latest
-
-    #- name: apply php-fpm.conf
-    #  template: src=./php-fpm.conf.tpl dest=/etc/php-fpm.d/www.conf backup=yes
-
-#    - name: restart php-fpm
-#      service: name=php-fpm state=restarted
-
-#    - name: chkconfig php-fpm
-#      command: chkconfig php-fpm on
-
     - name: install php rpm
       yum: name=http://rpms.famillecollet.com/enterprise/remi-release-7.rpm state=present
 
